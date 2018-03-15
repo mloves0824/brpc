@@ -31,3 +31,14 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+
+#vs
+mbrpc.opensdf
+mbrpc.sdf
+mbrpc.sln
+mbrpc.v12.suo
+mbrpc.vcxproj
+mbrpc.vcxproj.filters
+mbrpc.vcxproj.user
+
+

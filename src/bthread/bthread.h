@@ -27,6 +27,7 @@
 #if defined(__cplusplus)
 #  include <iostream>
 #  include "bthread/mutex.h"        // use bthread_mutex_t in the RAII way
+#  include <funcitonal>
 #endif
 
 #include "bthread/id.h"
@@ -50,6 +51,12 @@ extern int bthread_start_urgent(bthread_t* __restrict tid,
 extern int bthread_start_background(bthread_t* __restrict tid,
                                     const bthread_attr_t* __restrict attr,
                                     void * (*fn)(void*),
+                                    void* __restrict args);
+
+//support funcitonal
+extern int bthread_start_background(bthread_t* __restrict tid,
+                                    const bthread_attr_t* __restrict attr,
+                                    std::function<void*(void*)> fn,
                                     void* __restrict args);
 
 // Wake up operations blocking the thread. Different functions may behave
