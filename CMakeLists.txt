@@ -91,6 +91,9 @@ endif()
 include(FindProtobuf)
 include(FindThreads)
 
+set(CMAKE_INCLUDE_PATH "third/leveldb/include") 
+set(CMAKE_LIBRARY_PATH "third/leveldb/lib")
+
 find_path(LEVELDB_INCLUDE_PATH NAMES leveldb/db.h)
 find_library(LEVELDB_LIB NAMES leveldb)
 if ((NOT LEVELDB_INCLUDE_PATH) OR (NOT LEVELDB_LIB))
