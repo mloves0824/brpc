@@ -1,0 +1,47 @@
+# Ignore all files without extension.
+# If you need to git-add a file without extension, add -f
+*
+!*.*
+!*/
+
+*.o
+*.a
+*.log
+*.pb.cc
+*.pb.h
+*.prof
+*.so
+/output
+/test/output
+
+# Ignore hidden files
+.*
+*.swp
+
+# Ignore auto-generated files
+config.mk
+src/butil/config.h
+
+# Ignore CMake files
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+#vs
+mbrpc.opensdf
+mbrpc.sdf
+mbrpc.sln
+mbrpc.v12.suo
+mbrpc.vcxproj
+mbrpc.vcxproj.filters
+mbrpc.vcxproj.user
+
+/build
+*.VC.db
+*.VC.VC.*
+
