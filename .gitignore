@@ -42,3 +42,5 @@ mbrpc.vcxproj.filters
 mbrpc.vcxproj.user
 
 /build
+*.VC.db
+
