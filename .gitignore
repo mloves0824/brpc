@@ -42,3 +42,4 @@ mbrpc.vcxproj.filters
 mbrpc.vcxproj.user
 
 /build
+config_brpc.sh
